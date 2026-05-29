@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Patience Kabatesi — Software Engineer, Flutter & Web Developer"/>
+  <title>Patience Kabatesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">PK<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#projects" data-text="Work">Work</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <canvas id="hero-canvas"></canvas>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-tag"><span class="tag-dot"></span>Available for opportunities</p>
+      <h1 class="hero-title">
+        <span class="title-line">Patience</span>
+        <span class="title-line accent">Kabatesi</span>
+      </h1>
+      <p class="hero-role">Software Engineer <span class="role-sep">—</span> Flutter & Web Developer</p>
+      <p class="hero-desc">
+        I build fast, beautiful, and scalable digital products. From
+        mobile apps to full-stack platforms — I turn ideas into
+        elegant, working software.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="cta-primary">
+          <span>View My Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="cta-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">3+</span><span class="stat-l">Stacks</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">AUCA</span><span class="stat-l">Graduate</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <img src="assets/images/AGRI/profile.jpg" alt="Patience Kabatesi" class="avatar-img"/>
+        <div class="avatar-badge">
+          <i class="fa-solid fa-code"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll down">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-label-col">
+        <span class="section-eyebrow">01 / About</span>
+      </div>
+      <div class="about-content">
+        <h2 class="about-heading">
+          Engineering software<br/>
+          <em>that people love</em><br/>
+          to use.
+        </h2>
+        <div class="about-body">
+          <p>
+            I'm a Software Engineer from AUCA with a deep passion for
+            Flutter, web development, and building systems that are both
+            elegant and functional. I care about clean code, great UX, and
+            scalable architecture.
+          </p>
+          <p>
+            Whether it's a mobile app, an analytics dashboard, or an
+            AI-powered platform — I approach every project with precision,
+            curiosity, and a high standard for craft.
+          </p>
+        </div>
+        <div class="about-chips">
+          <span>Problem Solver</span>
+          <span>Full-Stack</span>
+          <span>Flutter Dev</span>
+          <span>Clean Code Advocate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">02 / Work</span>
+      <h2 class="section-title">Selected Projects</h2>
+    </div>
+
+    <div class="projects-list">
+
+      <!-- PROJECT 1 -->
+      <article class="proj-item" data-index="01">
+        <div class="proj-media">
+          <div class="slider" id="slider-1">
+            <div class="slider-track" id="track-1">
+              <img src="assets/images/MTN/mtndash.png" alt="MoAgent Dashboard"/>
+              <img src="assets/images/MTN/insight.png" alt="Insight"/>
+              <img src="assets/images/MTN/mtnsignup.png" alt="Signup"/>
+              <img src="assets/images/MTN/mtnlogin.png" alt="Login"/>
+              <img src="assets/images/MTN/cashinvscashout.png" alt="Cash In vs Out"/>
+              <img src="assets/images/MTN/srm_insight.png" alt="SRM Insight"/>
+            </div>
+            <button class="sl-btn sl-prev" data-slider="1">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="sl-btn sl-next" data-slider="1">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="sl-dots" id="dots-1"></div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <span class="proj-num">01</span>
+            <span class="proj-year">2024</span>
+          </div>
+          <h3 class="proj-title">MoAgent Frontend</h3>
+          <p class="proj-desc">
+            Flutter dashboard for analyzing agent transaction behavior —
+            cash-in vs cash-out — with interactive, real-time charts and
+            detailed SRM insights.
+          </p>
+          <div class="proj-tags">
+            <span>Flutter</span><span>Dart</span><span>Charts</span><span>REST API</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="proj-item proj-item--alt" data-index="02">
+        <div class="proj-media">
+          <div class="slider" id="slider-2">
+            <div class="slider-track" id="track-2">
+              <img src="assets/images/AGRI/agrihome.png" alt="AgriAssist Home"/>
+              <img src="assets/images/AGRI/adddisease.png" alt="Add Disease"/>
+              <img src="assets/images/AGRI/admindash.png" alt="Admin Dashboard"/>
+              <img src="assets/images/AGRI/confirm&view.png" alt="Confirm View"/>
+              <img src="assets/images/AGRI/confirm.png" alt="Confirm"/>
+              <img src="assets/images/AGRI/injira.png" alt="Injira"/>
+              <img src="assets/images/AGRI/list.png" alt="List"/>
+              <img src="assets/images/AGRI/recomsympt.png" alt="Recommendations"/>
+            </div>
+            <button class="sl-btn sl-prev" data-slider="2">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="sl-btn sl-next" data-slider="2">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="sl-dots" id="dots-2"></div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <span class="proj-num">02</span>
+            <span class="proj-year">2024</span>
+          </div>
+          <h3 class="proj-title">AgriAssist</h3>
+          <p class="proj-desc">
+            AI-powered agricultural support platform for farmers,
+            veterinarians, and FAO experts. Features disease detection via
+            image analysis, real-time crop & livestock recommendations,
+            and automated reporting.
+          </p>
+          <div class="proj-tags">
+            <span>PHP</span><span>CSS</span><span>MySQL</span><span>AI/ML</span>
+          </div>
+        </div>
+      </article>
+
+  <!-- PROJECT 3 -->
+<!-- PROJECT 3 -->
+<article class="proj-item" data-index="03">
+
+  <div class="proj-media">
+
+    <div class="video-slider" id="video-slider-3">
+      <div class="video-track">
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/QEkBEKa5hQU?si=PgApsnTBBhWacDhF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kxxmeVcTmSI?si=_m3iZc43oYZRpz_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+
+    
+
+    </div>
+
+  </div>
+
+  <div class="proj-info">
+    <div class="proj-meta">
+      <span class="proj-num">03</span>
+      <span class="proj-year">2024</span>
+    </div>
+
+    <h3 class="proj-title">FITAI</h3>
+
+    <p class="proj-desc">
+      An AI-powered fitness platform that provides personalized workout
+      recommendations, body analysis, and smart progress tracking using
+      real-time data and intelligent insights.
+    </p>
+
+    <div class="proj-tags">
+      <span>PHP</span>
+      <span>CSS</span>
+      <span>MySQL</span>
+      <span>JavaScript</span>
+      <span>AI</span>
+    </div>
+  </div>
+
+</article>
+
+    <!-- PROJECT 4 -->
+<article class="proj-item proj-item--alt" data-index="04">
+
+  <div class="proj-media">
+
+    <div class="video-wrap">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Qq2fEnzYMxE?si=-0FEtT09XWVAvub1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <div class="proj-info">
+    <div class="proj-meta">
+      <span class="proj-num">04</span>
+      <span class="proj-year">2025</span>
+    </div>
+
+    <h3 class="proj-title">AUCA Analytics Dashboard</h3>
+
+    <p class="proj-desc">
+      Powerful institutional analytics dashboard visualizing student
+      performance, course trends, and administrative insights in real time
+      through dynamic charts and automated reports.
+    </p>
+
+    <div class="proj-tags">
+      <span>Spring Boot</span>
+      <span>ZK Framework</span>
+      <span>Java</span>
+      <span>MySQL</span>
+    </div>
+  </div>
+
+</article>
+
+     <!-- PROJECT 5 -->
+<article class="proj-item" data-index="05">
+
+  <div class="proj-media">
+
+    <div class="video-wrap">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/DOuPsvu0fb0?si=MQ0P5X3qTnQ7mHoP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <div class="proj-info">
+    <div class="proj-meta">
+      <span class="proj-num">05</span>
+      <span class="proj-year">2025</span>
+    </div>
+
+    <h3 class="proj-title">AUCA AI Chatbot</h3>
+
+    <p class="proj-desc">
+      Intelligent conversational chatbot handling student queries,
+      automating FAQ responses, and integrating with backend services to
+      deliver real-time information via a clean Angular interface.
+    </p>
+
+    <div class="proj-tags">
+      <span>Spring Boot</span>
+      <span>Angular</span>
+      <span>TypeScript</span>
+      <span>REST API</span>
+    </div>
+  </div>
+
+</article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">03 / Skills</span>
+      <h2 class="section-title">Technical Expertise</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend</h3>
+        <div class="sk-chips">
+          <span class="core">Java + OOP</span>
+          <span class="core">Spring Boot</span>
+          <span class="core">REST API</span>
+          <span class="core">Spring Data JPA</span>
+          <span>Spring Security</span>
+          <span>Maven / Gradle</span>
+          <span>MVC Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-display"></i></div>
+        <h3>Frontend</h3>
+        <div class="sk-chips">
+          <span class="core">ZK Framework</span>
+          <span class="core">Angular</span>
+          <span class="core">Flutter / Dart</span>
+          <span>TypeScript</span>
+          <span>HTML5 / CSS3</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Databases</h3>
+        <div class="sk-chips">
+          <span class="core">MySQL</span>
+          <span class="core">PostgreSQL</span>
+          <span>SQL Queries & Joins</span>
+          <span>ERD / DB Design</span>
+          <span>Hibernate ORM</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-vial"></i></div>
+        <h3>Testing & QA</h3>
+        <div class="sk-chips">
+          <span class="core">JUnit 5</span>
+          <span class="core">Mockito</span>
+          <span>Integration Testing</span>
+          <span>Spring Boot Test</span>
+          <span>JaCoCo</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-wrench"></i></div>
+        <h3>Tools & DevOps</h3>
+        <div class="sk-chips">
+          <span class="core">Git & GitHub</span>
+          <span class="core">Docker</span>
+          <span>Postman</span>
+          <span>IntelliJ IDEA</span>
+          <span>VSCode</span>
+          <span>CI/CD Basics</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="sk-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <h3>Engineering Practices</h3>
+        <div class="sk-chips">
+          <span class="core">Clean Code</span>
+          <span class="core">RESTful Principles</span>
+          <span>API Documentation</span>
+          <span>Debugging</span>
+          <span>Agile / Teamwork</span>
+          <span>README Writing</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <span class="section-eyebrow">04 / Contact</span>
+        <h2 class="contact-heading">
+          Let's build<br/>
+          something<br/>
+          <em>great together.</em>
+        </h2>
+        <p class="contact-sub">
+          Open to full time roles, freelance projects, and collaborations.
+          Don't hesitate to reach out.
+        </p>
+      </div>
+      <div class="contact-right">
+        <a href="mailto:tesipatience15@gmail.com" class="contact-card">
+          <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">Email</span>
+            <span class="cc-value">tesipatience15@gmail.com</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+        </a>
+        <a href="https://github.com/tesii" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">github.com/tesii</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/patience-kabatesi-66a963271/" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">patience-kabatesi</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+        </a>
+        <a href="tel:+250790204864" target="_blank" rel="noopener" class="contact-card">
+
+          <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">Phone</span>
+            <span class="cc-value">+250 790 204 864</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">PK<span class="logo-dot">.</span></span>
+    <span class="footer-copy">© 2026 Patience Kabatesi — Built with care.</span>
+    <div class="footer-links">
+      <a href="https://github.com/tesii" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/patience-kabatesi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:tesipatience15@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
